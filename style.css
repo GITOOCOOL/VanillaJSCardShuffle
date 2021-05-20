@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding:0;
+    background: black;
+}
+
+.container{
+    background: rgb(57, 55, 55);
+    width: 90%;
+    position: relative;
+    left: 5%;
+    border: 2px dashed blueviolet;
+}
+
+.inputFormContainer {
+    margin: 10px;
+    text-align: center;
+}
+.table {
+    display: flex;
+    background: rgb(108, 106, 106);
+    height: fit-content;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    width: 90px;
+    margin: 1px;
+    margin-left: -40px;
+    transform: rotate(1deg);
+
+}
+
+.card img {
+    height: 100%;
+}
+.card:hover {
+    position: relative;
+    top: -1px;
+    opacity: 0.9;
+    box-shadow: 5px 10px 6px rgba(140,140,140,0.2);
+}
+
+.userTable{
+    display: flex;
+    background: rgb(71, 71, 149);
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cardHolder {
+    box-sizing: content-box;
+    width:90px;
+    height: 139px;
+    border: 1px dashed yellow;
+    margin-left: 20px;
+}
