@@ -1,4 +1,4 @@
-var deck = ['A',2,3,4,5,6,7,8,9,10,'J','Q','K']
+let deck = ['A',2,3,4,5,6,7,8,9,10,'J','Q','K']
 
 function arrange(deck, from, to){
     let newDeck = []
@@ -32,8 +32,6 @@ const display = function(d){
         cards[i].src = 'images/' + d[i] + 'S.png'
     }
 }
-
-
 
 display(deck)
 
@@ -70,6 +68,19 @@ let cardHolderPosition = 1
 
 cards = document.querySelectorAll('.card')
 
+cards.forEach(function(card) {
+    card.addEventListener('click', function(e){
+        if(cardHolderPosition > 6){return}
+        console.log(card)
+        card.style.display = 'none'
+        let cardHolder = document.getElementById('cardHolder' + cardHolderPosition)
+        cardHolder.src = card.src
+        console.log(cardHolder)
+        cardHolderPosition++
+
+    })
+})
+/*
 let card0 = cards[0]
 let card1 = cards[1]
 let card2 = cards[2]
@@ -204,5 +215,5 @@ card9.addEventListener('click', pickCard9)
 card10.addEventListener('click', pickCard10)
 card11.addEventListener('click', pickCard11)
 card12.addEventListener('click', pickCard12)
-
+*/
 
